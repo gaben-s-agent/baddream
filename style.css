@@ -1,0 +1,68 @@
+*{margin:0;padding:0;outline:none;}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "speedContainer finalCanvas"
+    "circleColorContainer finalCanvas"
+    "backgroundColorConatiner finalCanvas"
+    "textColorContainer finalCanvas";
+}
+
+#finalCanvas { grid-area: finalCanvas; }
+
+#speedContainer { grid-area: speedContainer; }
+
+#circleColorContainer { grid-area: circleColorContainer; }
+
+#backgroundColorContainer { grid-area: backgroundColorConatiner; }
+
+#textColorContainer { grid-area: textColorContainer; }
+
+
+div {
+    margin: 5px 5px 5px 5px;
+    font-family: Rubik, sans-serif;
+    justify-self: right;
+}
+
+label {
+    min-width: 100px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: super;
+}
+
+.input {
+    margin-left: 3px;
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+::-webkit-color-swatch {
+    border:none;
+    border-radius: 20px;
+}
+
+::-webkit-color-swatch-wrapper {
+    padding:0;
+    background:white;
+}
+
+#speed {
+    width: 200px;
+    border: gray 1px solid;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Rubik, sans-serif;
+}
+
+#finalCanvas {
+    margin: auto 0 auto 50px;
+    transform: scale(1.5);
+}
+
